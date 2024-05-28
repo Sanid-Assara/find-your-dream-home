@@ -19,6 +19,7 @@
             colors: {
               eternity: "#2B1B12",
               provincialPink: "#FEF7F2",
+              saddle: "#4F3527",
             },
           },
         },
@@ -63,17 +64,29 @@
     </header>
     <main>
       <!-- Find Your Dream Home Section -->
-      <section class="bg-[#FEF7F2] flex items-center-">
-        <div class="outline-dashed flex flex-col justify-center">
-          <h1>Find Your Dream Home</h1>
-          <p>
+      <section class="bg-provincialPink flex gap-x-0 pl-20">
+        <div
+          class="flex flex-col gap-10 justify-start items-start pt-36 -mr-40"
+        >
+          <h1 class="text-eternity text-7xl font-bold font-montserrat">
+            Find Your Dream Home
+          </h1>
+          <p class="text-saddle text-lg font-bold font-montserrat max-w-md">
             Explore our curated selection of exquisite properties meticulously
             tailored to your unique dream home vision
           </p>
-          <button>Sign up</button>
+          <button
+            class="mt-4 bg-eternity text-white text-lg font-semibold rounded-lg h-14 w-44 font-montserrat"
+          >
+            Sign up
+          </button>
         </div>
-        <figure class="outline-dashed">
-          <img src="./images/hero-image-1.png" alt="House Picture 1" />
+        <figure>
+          <img
+            class="mr-40"
+            src="./images/hero-image-1.png"
+            alt="House Picture 1"
+          />
         </figure>
       </section>
       <!-- Form Section -->
@@ -82,7 +95,12 @@
           <input type="text" name="location" placeholder="Location" />
           <input type="text" name="type" placeholder="Type" />
           <input type="text" name="price-range" placeholder="Price Range" />
-          <button type="submit">Sigh up</button>
+          <button
+            type="submit"
+            class="bg-eternity text-white text-lg font-semibold rounded-lg h-14 w-44 font-montserrat"
+          >
+            Sigh up
+          </button>
         </form>
       </section>
 
