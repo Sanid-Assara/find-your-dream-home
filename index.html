@@ -16,6 +16,10 @@
             fontFamily: {
               montserrat: ["Montserrat"],
             },
+            colors: {
+              eternity: "#2B1B12",
+              provincialPink: "#FEF7F2",
+            },
           },
         },
       };
@@ -25,13 +29,13 @@
     <!-- Sanid -->
     <!-- Header -->
     <header
-      class="flex gap-4 justify-between items-center px-20 py-10 bg-[#FEF7F2]"
+      class="flex gap-4 justify-between items-center px-20 py-10 bg-provincialPink"
     >
       <img src="./icons/logo.svg" alt="Logo" class="cursor-pointer" />
 
       <nav>
         <ul
-          class="flex gap-10 items-center text-center text-[#2B1B12] text-lg font-bold font-montserrat"
+          class="flex gap-10 items-center text-center text-eternity text-lg font-bold font-montserrat"
         >
           <li><a href="#">Home</a></li>
           <li><a href="#">Service</a></li>
@@ -51,7 +55,7 @@
           class="w-8 cursor-pointer"
         />
         <button
-          class="bg-[#2B1B12] text-white text-base font-semibold rounded-lg h-12 w-32 font-montserrat"
+          class="bg-eternity text-white text-base font-semibold rounded-lg h-12 w-32 font-montserrat"
         >
           Sign up
         </button>
@@ -59,8 +63,8 @@
     </header>
     <main>
       <!-- Find Your Dream Home Section -->
-      <section class="bg-[#FEF7F2]">
-        <div>
+      <section class="bg-[#FEF7F2] flex items-center-">
+        <div class="outline-dashed flex flex-col justify-center">
           <h1>Find Your Dream Home</h1>
           <p>
             Explore our curated selection of exquisite properties meticulously
@@ -68,7 +72,7 @@
           </p>
           <button>Sign up</button>
         </div>
-        <figure>
+        <figure class="outline-dashed">
           <img src="./images/hero-image-1.png" alt="House Picture 1" />
         </figure>
       </section>
