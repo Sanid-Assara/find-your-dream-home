@@ -20,6 +20,7 @@
               eternity: "#2B1B12",
               provincialPink: "#FEF7F2",
               saddle: "#4F3527",
+              dustStorm: "#DDC7BB",
             },
           },
         },
@@ -90,14 +91,33 @@
         </figure>
       </section>
       <!-- Form Section -->
-      <section>
-        <form action="" method="dialog">
-          <input type="text" name="location" placeholder="Location" />
-          <input type="text" name="type" placeholder="Type" />
-          <input type="text" name="price-range" placeholder="Price Range" />
+      <section class="flex items-center justify-center">
+        <form
+          class="flex items-center gap-6 bg-dustStorm max-w-6xl h-40 px-6 py-9 rounded-2xl"
+          action=""
+          method="dialog"
+        >
+          <input
+            class="p-4 rounded-lg"
+            type="text"
+            name="location"
+            placeholder="Location"
+          />
+          <input
+            class="p-4 rounded-lg"
+            type="text"
+            name="type"
+            placeholder="Type"
+          />
+          <input
+            class="p-4 rounded-lg"
+            type="text"
+            name="price-range"
+            placeholder="Price Range"
+          />
           <button
             type="submit"
-            class="bg-eternity text-white text-lg font-semibold rounded-lg h-14 w-44 font-montserrat"
+            class="ml-4 bg-eternity text-white text-lg font-semibold rounded-lg h-14 w-40 font-montserrat"
           >
             Sigh up
           </button>
