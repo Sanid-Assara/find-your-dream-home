@@ -12,6 +12,13 @@
     <script>
       tailwind.config = {
         theme: {
+          screens: {
+            "2xl": { max: "1535px" },
+            xl: { max: "1279px" },
+            lg: { max: "1023px" },
+            md: { max: "767px" },
+            sm: { max: "639px" },
+          },
           extend: {
             fontFamily: {
               montserrat: ["Montserrat"],
@@ -32,7 +39,7 @@
     <!-- Sanid -->
     <!-- Header -->
     <header
-      class="flex gap-4 justify-between items-center px-20 py-10 bg-provincialPink"
+      class="flex gap-4 justify-between items-center px-20 py-10 bg-provincialPink lg:flex-wrap"
     >
       <img src="./icons/logo.svg" alt="Logo" class="cursor-pointer" />
 
@@ -66,11 +73,13 @@
     </header>
     <main>
       <!-- Find Your Dream Home Section -->
-      <section class="bg-provincialPink flex gap-x-0 pl-20">
+      <section class="bg-provincialPink flex gap-x-0 pl-20 lg:flex-wrap">
         <div
           class="flex flex-col gap-10 justify-start items-start pt-36 -mr-40"
         >
-          <h1 class="text-eternity text-7xl font-bold font-montserrat">
+          <h1
+            class="text-eternity text-7xl font-bold font-montserrat lg:text-5xl md:text-4xl"
+          >
             Find Your Dream Home
           </h1>
           <p class="text-saddle text-lg font-bold font-montserrat max-w-md">
@@ -94,7 +103,7 @@
       <!-- Form Section -->
       <section class="flex items-center justify-center pb-8">
         <form
-          class="relative -top-20 flex items-center gap-6 bg-dustStorm h-40 px-6 py-9 mb-4 rounded-2xl filter drop-shadow-md"
+          class="relative -top-20 flex items-center gap-6 bg-dustStorm h-40 lg:h-auto px-6 py-9 mb-4 rounded-2xl filter drop-shadow-md lg:flex-wrap lg:justify-center"
           action=""
           method="dialog"
         >
@@ -147,48 +156,61 @@
       <!-- Michal -->
       <section>
         <div>
-          <h3> Why Choose Us </h3>
-            <h6> Elevating Your Home Buying Experience with Expertise, 
-                Integrity, and Unmatched Personalized Service </h6>
-            </div>
+          <h3>Why Choose Us</h3>
+          <h6>
+            Elevating Your Home Buying Experience with Expertise, Integrity, and
+            Unmatched Personalized Service
+          </h6>
+        </div>
       </section>
       <section>
         <div>
           <ul>
             <li>
-              <img/>
+              <img />
               <div>
                 <h5>Expert Guidance</h5>
                 <p>
-                  Benefit from our team's seasoned expertise for a smooth buying experience
+                  Benefit from our team's seasoned expertise for a smooth buying
+                  experience
                 </p>
               </div>
-              <li>
-                <img/>
-                <div>
-                  <h5>Personalized Service</h5>
-                  <p>
-                    Our services adapt to your unique needs, making your journey stress-free
-                    </p>  
-                </div>
-                <li>
-                  <img/>
-                  <div>
-                    <h5>Transparent Process</h5>
-                    <p>
-                      Stay informed with our clear and honest approach to buying your home
-                    </p>
-                  </div>
-                  <li>
-                    <img/>
-                    <div>
-                      <h5>Exseptional Support</h5>
-                      <p>
-                        Providing peace of mind with our responsive and attentive customer service
-                      </p>
-                    </div>
-                  </ul>
-               </div>
+            </li>
+
+            <li>
+              <img />
+              <div>
+                <h5>Personalized Service</h5>
+                <p>
+                  Our services adapt to your unique needs, making your journey
+                  stress-free
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <img />
+              <div>
+                <h5>Transparent Process</h5>
+                <p>
+                  Stay informed with our clear and honest approach to buying
+                  your home
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <img />
+              <div>
+                <h5>Exseptional Support</h5>
+                <p>
+                  Providing peace of mind with our responsive and attentive
+                  customer service
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <section></section>
       <!-- Mohammed -->
