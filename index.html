@@ -4,50 +4,143 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find Your Dream Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              montserrat: ["Montserrat"],
+            },
+            colors: {
+              eternity: "#2B1B12",
+              provincialPink: "#FEF7F2",
+              saddle: "#4F3527",
+              dustStorm: "#DDC7BB",
+              tobaccoBrown: "#695346",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
+  <body class="max-w-screen-2xl">
     <!-- Sanid -->
     <!-- Header -->
-    <head>
-      <img src="./icons/logo.svg" alt="Logo" />
+    <header
+      class="flex gap-4 justify-between items-center px-20 py-10 bg-provincialPink"
+    >
+      <img src="./icons/logo.svg" alt="Logo" class="cursor-pointer" />
+
       <nav>
-        <ul>
+        <ul
+          class="flex gap-10 items-center text-center text-eternity text-lg font-bold font-montserrat"
+        >
           <li><a href="#">Home</a></li>
           <li><a href="#">Service</a></li>
           <li><a href="#">Agents</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <span>
-        <img src="./icons/search.svg" alt="search Icon" />
-        <img src="./icons/user.svg" alt="User Icon" />
-        <button>Sign up</button>
+      <span class="flex gap-8 items-center">
+        <img
+          src="./icons/search.svg"
+          alt="search Icon"
+          class="w-8 cursor-pointer"
+        />
+        <img
+          src="./icons/user.svg"
+          alt="User Icon"
+          class="w-8 cursor-pointer"
+        />
+        <button
+          class="bg-eternity text-white text-base font-semibold rounded-lg h-12 w-32 font-montserrat"
+        >
+          Sign up
+        </button>
       </span>
-    </head>
+    </header>
     <main>
-
       <!-- Find Your Dream Home Section -->
-      <section>
-        <div>
-          <h1>Find Your Dream Home</h1>
-          <p>
+      <section class="bg-provincialPink flex gap-x-0 pl-20">
+        <div
+          class="flex flex-col gap-10 justify-start items-start pt-36 -mr-40"
+        >
+          <h1 class="text-eternity text-7xl font-bold font-montserrat">
+            Find Your Dream Home
+          </h1>
+          <p class="text-saddle text-lg font-bold font-montserrat max-w-md">
             Explore our curated selection of exquisite properties meticulously
             tailored to your unique dream home vision
           </p>
-          <button>Sign up</button>
+          <button
+            class="mt-4 bg-eternity text-white text-lg font-semibold rounded-lg h-14 w-44 font-montserrat"
+          >
+            Sign up
+          </button>
         </div>
         <figure>
-          <img src="./images/hero-image-1.png" alt="House Picture 1" />
+          <img
+            class="mr-40"
+            src="./images/hero-image-1.png"
+            alt="House Picture 1"
+          />
         </figure>
       </section>
       <!-- Form Section -->
-      <section>
-        <form action="" method="dialog">
-          <input type="text" name="location" placeholder="Location" />
-          <input type="text" name="type" placeholder="Type" />
-          <input type="text" name="price-range" placeholder="Price Range" />
-          <button type="submit">Sigh up</button>
+      <section class="flex items-center justify-center pb-8">
+        <form
+          class="relative -top-20 flex items-center gap-6 bg-dustStorm h-40 px-6 py-9 mb-4 rounded-2xl filter drop-shadow-md"
+          action=""
+          method="dialog"
+        >
+          <div class="relative flex items-center">
+            <input
+              class="p-4 rounded-lg placeholder-tobaccoBrown text-lg text-saddle font-bold font-montserrat max-w-60 border-2 border-white focus:border-tobaccoBrown focus:outline-none"
+              type="text"
+              name="location"
+              placeholder="Location"
+              autocomplete="address-line1"
+            />
+            <span class="absolute right-3">
+              <img src="./icons/location.svg" alt="Location Icon" />
+            </span>
+          </div>
+
+          <div class="relative flex items-center">
+            <input
+              class="p-4 rounded-lg placeholder-tobaccoBrown text-lg text-saddle font-bold font-montserrat max-w-60 border-2 border-white focus:border-tobaccoBrown focus:outline-none"
+              type="text"
+              name="type"
+              placeholder="Type"
+            />
+            <span class="absolute right-3">
+              <img src="./icons/home.svg" alt="House Icon" />
+            </span>
+          </div>
+
+          <div class="relative flex items-center">
+            <input
+              class="p-4 rounded-lg placeholder-tobaccoBrown text-lg text-saddle font-bold font-montserrat max-w-60 border-2 border-white focus:border-tobaccoBrown focus:outline-none"
+              type="text"
+              name="price-range"
+              placeholder="Price Range"
+            />
+            <span class="absolute right-3">
+              <img src="./icons/price.svg" alt="Coin Icon" />
+            </span>
+          </div>
+
+          <button
+            type="submit"
+            class="ml-4 bg-eternity text-white text-lg font-semibold rounded-lg h-14 w-40 font-montserrat"
+          >
+            Sign up
+          </button>
         </form>
       </section>
 
