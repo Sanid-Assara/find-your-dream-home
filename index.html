@@ -218,7 +218,7 @@
       <section></section>
       <section id="contact" class="bg-white">
         <h2
-          class="text-eternity text-3xl md:text-2xl text-center font-bold font-montserrat py-7"
+          class="text-eternity text-3xl md:text-2xl text-center font-bold font-montserrat py-7 pt-24"
         >
           Do you have any Question? <br />
           Get Help From Us
@@ -242,6 +242,36 @@
             </a>
           </li>
         </ul>
+
+        <form
+          action=""
+          class="flex flex-row items-center justify-center h-20 space-x-5 py-16 pb-32"
+        >
+          <div class="relative w-1/4 min-w-72">
+            <input
+              type="text"
+              name="email"
+              placeholder="Enter your email address..."
+              autocomplete="email"
+              class="text-eternity bg-dustStorm rounded-lg h-11 w-full placeholder-tobaccoBrown pl-10 pr-4 focus:outline-none"
+            />
+            <div
+              class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+            >
+              <img
+                src="icons/email.png"
+                alt="email icon"
+                class="h-5 w-5 text-gray-400"
+              />
+            </div>
+          </div>
+
+          <button
+            class="bg-eternity text-white text-base font-semibold rounded-lg h-12 w-32 font-montserrat"
+          >
+            Submit
+          </button>
+        </form>
       </section>
     </main>
 
